@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    android:layout_margin = "8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id = "@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            tools:src = "@drawable/ic_travel_background"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id = "@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below = "@+id/image_view"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="This is healdine"/>
+
+        <TextView
+            android:id = "@+id/description_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_view"
+            android:textSize="16sp"
+            android:padding="6dp"
+            tools:text = "This is the description about the news"/>
+
+        <TextView
+            android:id = "@+id/author_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/description_view"
+            android:textAlignment="viewEnd"
+            android:paddingEnd="15dp"
+            android:textStyle="bold"
+            tools:text = "Author Name"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

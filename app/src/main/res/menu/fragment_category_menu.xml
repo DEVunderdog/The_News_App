@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single">
+
+                <item
+                    android:id = "@+id/Home"
+                    android:title="Home"/>
+
+                <item
+                    android:id = "@+id/catBusiness"
+                    android:title="Business"/>
+
+                <item
+                    android:id = "@+id/catEntertainment"
+                    android:title="Entertainment"/>
+
+                <item
+                    android:id = "@+id/catHealth"
+                    android:title="Health"/>
+
+                <item
+                    android:id = "@+id/catSports"
+                    android:title="Sports"/>
+
+                <item
+                    android:id = "@+id/catTech"
+                    android:title="Technology"/>
+        </group>
+
+
+
+
+</menu>
